@@ -1,0 +1,33 @@
+{% extends "nav.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+    <table class="table table-success">
+        <tr>
+            <th>select_pack</th>
+            <th>image</th>
+            <th>price</th>
+            <th>details</th>
+            <th>no_of_rooms</th>
+        </tr>
+        <tr>
+            <td>{{data.select_pack}}</td>
+            <td><img src="{{data.img.url}}" alt="" height="90px"></td>
+            <td>{{data.price}}</td>
+            <td>{{data.details}}</td>
+            <td>{{data.no_of_rooms}}</td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
+{% endblock  %}
